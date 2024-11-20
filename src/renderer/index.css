@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('./styles/fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url('./styles/fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('./styles/fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: #091116;
+}
+
+button, h1, h2, p, label {
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background: none;
+  border: 2px solid #1dc9a0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1dc9a0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+nav button:hover {
+  background-color: #1c3837;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.action-block {
+  position: relative;
+  width: 350px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.action-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1dc9a0;
+}
+
+.action-form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-form .input-block {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-form .input-block label {
+  color: #1dc9a0;
+  font-weight: 400;
+}
+
+.action-form .input-block input {
+  position: relative;
+  width: 180px;
+  height: 26px;
+  padding: 0px 6px;
+  outline: none;
+  background: none;
+  border: 2px solid #1dc9a0;
+  border-radius: 4px;
+  color: #1dc9a0;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.action-form button, .clear-button {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background: none;
+  border: 2px solid #1dc9a0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1dc9a0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.action-form button:hover, .clear-button:hover {
+  background-color: #1dc9a0;
+  color: white;
+}
+
+.action-block .table-block {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  color: #1dc9a0;
+  font-family: 'Roboto';
+  overflow-y: scroll;
+}
+
+.table-block .data-table {
+  position: relative;
+  width: 100%;
+}
+
+.data-table, .data-table td {
+  position: relative;
+  padding: 6px;
+  border: 1px solid #1dc9a0;
+  border-collapse: collapse;
+  text-align: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.data-table .key-column {
+  max-width: 30px;
+}
+
+.data-table .value-column {
+  max-width: 100px;
+}
+
+.message-block {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -2,7 +2,7 @@
   "name": "lab3_ad",
   "productName": "lab3_ad",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Desktop app for managing records in AVL-tree made for laboratory work",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
@@ -24,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.0.0",
     "electron": "33.2.0",
     "eslint": "^8.0.1",

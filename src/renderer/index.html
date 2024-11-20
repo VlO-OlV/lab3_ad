@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AVL-tree</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class='menu-button'>Create</button>
+        <button class='menu-button'>Find</button>
+        <button class='menu-button'>Edit</button>
+        <button class='menu-button'>Delete</button>
+        <button class='menu-button'>Data</button>
+      </nav>
+    </header>
+    <main>
+      <div class="action-block">
+        <h2 class='action-title'>Create record</h2>
+        <form class="action-form create-form">
+          <div class="input-block">
+            <label for="key">Key:</label>
+            <input type="text" name="key" class='key-input'>
+          </div>
+          <div class="input-block">
+            <label for="value">Value:</label>
+            <input type="text" name="value" class='value-input'>
+          </div>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+      <div class="action-block" style='display: none;'>
+        <h2 class='action-title'>Find record</h2>
+        <form class="action-form find-form">
+          <div class="input-block">
+            <label for="key">Key:</label>
+            <input type="text" name="key" class='key-input'>
+          </div>
+          <button type="submit">Find</button>
+        </form>
+      </div>
+      <div class="action-block" style='display: none;'>
+        <h2 class='action-title'>Edit record</h2>
+        <form class="action-form edit-form">
+          <div class="input-block">
+            <label for="key">Key:</label>
+            <input type="text" name="key" class='key-input'>
+          </div>
+          <div class="input-block">
+            <label for="value">Value:</label>
+            <input type="text" name="value" class='value-input'>
+          </div>
+          <button type="submit">Edit</button>
+        </form>
+      </div>
+      <div class="action-block" style='display: none;'>
+        <h2 class='action-title'>Delete record</h2>
+        <form class="action-form delete-form">
+          <div class="input-block">
+            <label for="key">Key:</label>
+            <input type="text" name="key" class='key-input'>
+          </div>
+          <button type="submit">Delete</button>
+        </form>
+      </div>
+      <div class="action-block"style='display: none;'>
+        <h2 class='action-title'>Data</h2>
+        <div class="table-block">
+          <table class='data-table'></table>
+        </div>
+        <button class="clear-button">Clear data</button>
+      </div>
+      <div class="message-block"></div>
+    </main>
+  </body>
+</html>
